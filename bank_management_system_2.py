@@ -76,12 +76,3 @@ while True:
 
 
 
-
-# 1.register account
-#     name , age,phone number,username,password
-# 2.logiin account
-#     username,password
-#     1.deposit
-#     2.withdraw
-#     3.profile view
-#     4.logout
