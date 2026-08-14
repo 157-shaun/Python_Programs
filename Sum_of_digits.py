@@ -5,7 +5,7 @@ def sum_digits(num):
     Sum=0
     while num>0:
         temp=num%10
-        Sum+=temp
+        Sum+=temp 
         num//=10
     if Sum>=0 and Sum<10:
         return Sum

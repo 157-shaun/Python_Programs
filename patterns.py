@@ -54,7 +54,36 @@
 #     print()
 
 # Palindrome triangular
-row = int(input("enter number of rows :"))
+# row = int(input("enter number of rows :"))
+# for i in range(1,row+1):
+#     print("  "*(row-i),end="")
+#     for j in range(i,0,-1):
+#         print(j,end=" ")
+#     for k in range(2,i+1):
+#         print(k,end=" ")
+#     print()
+
+# rhombus pattern
+# row = int(input("enter number of rows :"))
+# colm = int(input("enter number of columns :"))
+# for i in range(1,row+1):
+#     print(" "*i,end=" ")
+#     for j in range(colm):
+#         print("*",end=" ")
+#     print()
+
+# diamond pattern
+row=int(input("enter number of rows :"))
 for i in range(1,row+1):
-    print(" "*(row-i),end=" ")
-    
+    if i<=4:
+        print(" "*(row-(i+1)),end=" ")
+        for j in range(i):
+            print("*",end=" ")
+    else:
+        print(" "*(i-2),end=" ")
+        for k in range(row-(i-1)):
+            print("*",end=" ")
+    print()
+            
+            
+        

@@ -26,8 +26,31 @@
 # print(count)
 
 # factorial of a number
-n=int(input("enter a number :"))
-fact=1
-for i in range(1,n+1):
-    fact=fact*i
-print("Factorial of",5,"is",fact)
+# n=int(input("enter a number :"))
+# fact=1
+# for i in range(1,n+1):
+#     fact=fact*i
+# print("Factorial of",5,"is",fact)
+
+
+def sum_digits(num):
+    temp=0
+    Sum=0
+    if num<0 or (num>=0 and num<10):
+        print("Enter a multidigit number")
+        return None
+    else:     
+        while num>0:
+           temp=num%10
+           Sum+=temp
+           num//=10
+    if Sum>=0 and Sum<10:
+        return Sum
+    else:
+        return sum_digits(Sum)
+
+
+num=int(input("Enter a number :"))
+result=sum_digits(num)
+if result is not None:
+    print(f"Sum of the digits of {num} until it becomes a single digit = {result}")
